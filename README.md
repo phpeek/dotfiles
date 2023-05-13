@@ -37,3 +37,8 @@ And then `stow` particular directory to link config to Your home directory.
 stow <dir>
 ```
 
+E.g. if You want to use my `nvim` config run:
+
+```sh
+stow nvim
+```
