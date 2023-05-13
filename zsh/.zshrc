@@ -130,7 +130,10 @@ esac
 # pnpm end
 
 # install/update kitty
-alias kitty_update="curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin"
+alias kitty_install="curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin"
+
+# install/update pnpm
+alias pnpm_install="curl -fsSL https://get.pnpm.io/install.sh | sh -"
 
 # starship init
 eval "$(starship init zsh)"
