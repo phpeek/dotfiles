@@ -25,6 +25,14 @@ I'm using [GNU Stow](https://www.gnu.org/software/stow/) to manage my dotfiles.
 
 In order to link partciular config to Your home directory run:
 
+Go to repo:
+
+```sh
+cd ~/.dotfiles
+```
+
+And then `stow` particular directory to link config to Your home directory.
+
 ```sh
 stow <dir>
 ```
