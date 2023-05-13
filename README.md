@@ -13,10 +13,10 @@ cd ~
 Then clone the repo into `.dotfiles` directory:
 
 > **Note**
-> I choose `.dotfiles` as directory name so that repo is hidden in home directory.
+> I choose `.dotfiles` as directory name so that repo is hidden in home directory.aaaaaaaaaaaaaaaaaa
 
 ```sh
-git clone https://github.com/phpeek/dotfiles.git
+git clone https://github.com/phpeek/dotfiles.git .dotfiles
 ```
 
 ## Applying 
