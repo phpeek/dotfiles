@@ -8,7 +8,7 @@ end
 
 lsp.preset('recommended')
 
-lsp.on_attach(function(client, bufnr)
+lsp.on_attach(function(_, bufnr)
   lsp.default_keymaps({buffer = bufnr})
 
   -- override some of the deafult lsp key bindings
@@ -35,6 +35,15 @@ lsp.ensure_installed({
   'dockerls',
   'cssls',
   'lua_ls',
+  'yamlls',
+})
+
+lspconfig.yamlls.setup({
+  settings = {
+    yaml = {
+      keyOrdering = false
+    }
+  }
 })
 
 lsp.setup()
