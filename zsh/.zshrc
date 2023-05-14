@@ -135,5 +135,8 @@ alias kitty_install="curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /
 # install/update pnpm
 alias pnpm_install="curl -fsSL https://get.pnpm.io/install.sh | sh -"
 
+# install/update nvm
+alias nvm_install="curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash"
+
 # starship init
 eval "$(starship init zsh)"
