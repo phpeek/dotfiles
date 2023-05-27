@@ -4,10 +4,8 @@
 
 local map = require('phpeek.utils').map
 
--- change leader to a space
-map('', '<space>', '<nop>')
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+-- disable space in normal and visual modes 
+map({ 'n', 'v' }, '<space>', '<nop>', { silent = true })
 
 --------------------------------------------------------------------------------
 -- Neovim shortcuts
