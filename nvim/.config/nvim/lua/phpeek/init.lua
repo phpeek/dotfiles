@@ -22,9 +22,7 @@ vim.opt.rtp:prepend(lazypath)
 -- setup plugins folder
 require('lazy').setup('phpeek.plugins')
 require('phpeek.config')
--- require('phpeek.packer')
 require('phpeek.options')
 require('phpeek.keymaps')
--- require('phpeek.remap')
 require('phpeek.wsl-clipboard')
 

@@ -57,12 +57,12 @@ local servers = {
   dockerls = {},
   cssls = {},
   yamlls = {
-  settings = {
-    yaml = {
-      keyOrdering = false
-    }
+    settings = {
+      yaml = {
+        keyOrdering = false,
+      },
+    },
   },
-})
 
   lua_ls = {
     Lua = {
