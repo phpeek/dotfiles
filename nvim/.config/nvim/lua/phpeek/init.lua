@@ -19,10 +19,12 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- setup everything in plugin folder
+-- setup plugins folder
 require('lazy').setup('phpeek.plugins')
+require('phpeek.config')
 -- require('phpeek.packer')
 require('phpeek.options')
-require('phpeek.remap')
+require('phpeek.keymaps')
+-- require('phpeek.remap')
 require('phpeek.wsl-clipboard')
 

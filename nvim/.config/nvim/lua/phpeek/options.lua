@@ -17,7 +17,7 @@ o.swapfile = false -- do not user swap file
 o.backup = false -- do not user backup file
 o.undodir = os.getenv('HOME') .. '/.vim/undodir' -- for long-running undos
 o.undofile = true -- save undo history
-o.completeopt = 'menuone,noselect' -- autocomplete options
+o.completeopt = 'menuone,noselect' -- better experience for completeopt
 o.fileencoding = 'utf-8'
 o.termguicolors = true
 
@@ -51,6 +51,7 @@ o.shiftwidth = 2 -- shift 2 spaces when tabbing
 o.tabstop = 2 -- replace tab with 2 spaces
 o.softtabstop = 2 -- replace soft tab with 2 spaces
 o.smartindent = true -- autoindent new lines
+o.breakindent = true -- enable break indent
 
 --------------------------------------------------------------------------------
 -- Performance

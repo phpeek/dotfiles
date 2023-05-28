@@ -1,0 +1,7 @@
+require 'phpeek.config.telescope'
+require 'phpeek.config.nvim-treesitter'
+require 'phpeek.config.init'
+require 'phpeek.config.lsp'
+require 'phpeek.config.nvim-cmp'
+require 'phpeek.config.nvim-treesitter'
+require 'phpeek.config.telescope'
