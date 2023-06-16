@@ -1,0 +1,5 @@
+[core]
+	excludesFile = /Users/pyro/.global_gitignore
+	ignorecase = false
+[pull]
+	rebase = false
