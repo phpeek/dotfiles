@@ -1,7 +1,13 @@
+[color]
+  ui = auto
 [core]
+  editor = nvim
 	excludesFile = /Users/pyro/.global_gitignore
 	ignorecase = false
+  whitespace = trailing-space,space-before-tab
+[init]
+  defaultBranch = main
 [pull]
 	rebase = false
-[init]
-	defaultBranch = main
+[user]
+  name = Paweł Małolepszy
