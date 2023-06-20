@@ -1,44 +1,18 @@
 # My dotfiles
 
-## Installing
+Using `chezmoi` for multiplatform dotfiles.
 
-This repo should be cloned into home directory.
+Secrets are managed via [1Password](https://1password.com).
 
-Go to your home directory:
-
-```sh
-cd ~
-```
-
-Then clone the repo into `.dotfiles` directory:
-
-> **Note**
-> I choose `.dotfiles` as directory name so that repo is hidden in home directory.
+Make sure You're signed in [1Password-cli](https://developer.1password.com/docs/cli).
 
 ```sh
-git clone https://github.com/phpeek/dotfiles.git .dotfiles
-```
+eval $(op signin)
+``` 
 
-## Applying 
-
-I'm using [GNU Stow](https://www.gnu.org/software/stow/) to manage my dotfiles.
-
-In order to link partciular config to Your home directory run:
-
-Go to repo:
+Install
 
 ```sh
-cd ~/.dotfiles
+$ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply $GITHUB_USERNAME
 ```
 
-And then `stow` particular directory to link config to Your home directory.
-
-```sh
-stow <dir>
-```
-
-E.g. if You want to use my `nvim` config run:
-
-```sh
-stow nvim
-```
