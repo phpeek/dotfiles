@@ -1,0 +1,24 @@
+{{ if eq .osid "linux-ubuntu" -}}
+
+{{ $packages := list
+     "build-essential"
+     "curl"
+     "fzf"
+     "git"
+     "jq"
+     "libfuse2"
+     "zsh" -}}
+
+{{ $sudo := "sudo " -}}
+{{ if eq .chezmoi.username "root" -}}
+{{   $sudo = "" -}}
+{{ end -}}
+
+#!/bin/bash
+
+set -eufo pipefail
+
+{{ $sudo }}apt-get update
+{{ $sudo }}apt-get install -y {{ $packages | join " " }}
+
+{{ end -}}
