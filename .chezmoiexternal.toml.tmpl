@@ -17,14 +17,18 @@
    stripComponents = 1
    refreshPeriod = "168h"
 
-{{ if eq .chezmoi.os "linux" }}
+{{- $nvimPackage := "linux64" -}}
+
+{{- if eq .chezmoi.os "darwin" }}
+{{-   $nvimPackage = "macos" }}
+{{- end }}
+
 [".local/nvim"]
    type = "archive"
-   url = "https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz"
+   url = "https://github.com/neovim/neovim/releases/download/stable/nvim-{{ $nvimPackage }}.tar.gz"
    stripComponents = 1
    exact = true
    refreshPeriod = "672h"
-{{ end }}
 
 {{- $fontDir := "" }}
 {{- if eq .chezmoi.os "darwin" }}
