@@ -1,0 +1,12 @@
+[color]
+  ui = auto
+[core]
+  editor = nvim
+	ignorecase = false
+  whitespace = trailing-space,space-before-tab
+[init]
+  defaultBranch = main
+[pull]
+	rebase = false
+[user]
+  name = Paweł Małolepszy

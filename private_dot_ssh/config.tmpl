@@ -1,0 +1,19 @@
+HashKnownHosts no
+
+{{- if eq .chezmoi.os "darwin" }}
+
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+{{- end }}
+
+Host github.com
+  User git
+  IdentityFile ~/.ssh/gh_rsa
+  IdentitiesOnly yes
+
+Host {{ onepasswordRead "op://Sigma/AZ Git Hostname/notesPlain" }}
+  User git
+  IdentityFile ~/.ssh/az_rsa
+  IdentitiesOnly yes
+
