@@ -19,10 +19,17 @@ set -eufo pipefail
      "signal"
      "slack"
      "spotify"
+     "virtualbox-beta"
      "vlc"
      "whatsapp" -}}
 
+{{ $taps := list
+     "homebrew/cask-versions" -}}
+
 brew bundle --no-lock --file=/dev/stdin <<EOF
+{{ range ($taps | sortAlpha | uniq) -}}
+tap "{{ . }}"
+{{ end -}}
 {{ range ($brews | sortAlpha | uniq) -}}
 brew "{{ . }}"
 {{ end -}}
