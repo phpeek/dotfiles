@@ -124,6 +124,9 @@ vim.keymap.set('n', '<C-d>', '<C-d>zz')
 vim.keymap.set('', 'H', '^')
 vim.keymap.set('', 'L', '$')
 
+-- formatting utils
+vim.keymap.set('v', '<leader>jq', ':!jq<CR>', { desc = 'Format JSON using jq' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
