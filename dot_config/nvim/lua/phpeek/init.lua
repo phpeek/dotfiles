@@ -157,17 +157,15 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Setup lazy.nvim
 require('lazy').setup {
-  -- lock file in phpeek dir
+  -- keep lock file in user dedicated dir for easy checking of other configs
   lockfile = vim.fn.stdpath 'config' .. '/lua/phpeek/lazy-lock.json',
+
+  'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
 
   spec = {
     -- import your plugins
     { import = 'phpeek.plugins' },
   },
-  -- Configure any other settings here. See the documentation for more details.
-  -- colorscheme that will be used when installing plugins.
-
-  install = { colorscheme = { 'habamax' } },
 
   -- disable automatic check for plugin updates
   checker = {
