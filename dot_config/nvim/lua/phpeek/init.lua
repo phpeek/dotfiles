@@ -323,6 +323,8 @@ require('lazy').setup {
     },
   },
 
+  { 'Bilal2453/luvit-meta', lazy = true },
+
   spec = {
     -- import your plugins
     { import = 'phpeek.plugins' },
