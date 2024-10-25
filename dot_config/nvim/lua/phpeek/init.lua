@@ -157,6 +157,9 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Setup lazy.nvim
 require('lazy').setup {
+  -- lock file in phpeek dir
+  lockfile = vim.fn.stdpath 'config' .. '/lua/phpeek/lazy-lock.json',
+
   spec = {
     -- import your plugins
     { import = 'phpeek.plugins' },
