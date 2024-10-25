@@ -858,6 +858,14 @@ require('lazy').setup {
     end,
   },
 
+  {
+    'm4xshen/hardtime.nvim',
+    dependencies = { 'muniftanjim/nui.nvim', 'nvim-lua/plenary.nvim' },
+    opts = {
+      enabled = false,
+    },
+  },
+
   spec = {
     -- import your plugins
     { import = 'phpeek.plugins' },
