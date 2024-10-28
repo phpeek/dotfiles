@@ -309,6 +309,10 @@ require('lazy').setup({
       vim.keymap.set('n', '<leader><leader>', builtin.buffers, { desc = 'search opened buffers' })
       vim.keymap.set('n', '<leader>f.', builtin.current_buffer_fuzzy_find, { desc = '[s]earch current [b]uffer' })
       vim.keymap.set('n', '<leader>fs', builtin.lsp_document_symbols, { desc = '[f]ind document [s]ymbold' })
+
+      vim.keymap.set('n', '<leader>fc', function()
+        builtin.find_files { cwd = vim.fn.stdpath 'config' }
+      end, { desc = '[f]ind Neovim [c]onfig' })
     end,
   },
 
