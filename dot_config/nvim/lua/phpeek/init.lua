@@ -487,7 +487,21 @@ require('lazy').setup({
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
         gopls = {},
-        pyright = {},
+        basedpyright = {
+          analysis = {
+            typeCheckingMode = 'basic',
+            autoImportCompletions = true,
+            diagnosticSeverityOverrides = {
+              reportUnusedImport = 'information',
+              reportUnusedFunction = 'information',
+              reportUnusedVariable = 'information',
+              reportGeneralTypeIssues = 'none',
+              reportOptionalMemberAccess = 'none',
+              reportOptionalSubscript = 'none',
+              reportPrivateImportUsage = 'none',
+            },
+          },
+        },
         rust_analyzer = {},
         dockerls = {},
         cssls = {},
