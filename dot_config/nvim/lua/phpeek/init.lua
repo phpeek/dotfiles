@@ -282,7 +282,7 @@ require('lazy').setup({
     },
   },
 
-  { -- Fuzzy Finder (files, lsp, etc)
+  -- Fuzzy Finder (files, lsp, etc)
   {
     'ibhagwan/fzf-lua',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
