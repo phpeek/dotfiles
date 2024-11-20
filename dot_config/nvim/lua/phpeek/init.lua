@@ -306,7 +306,7 @@ require('lazy').setup({
       { '<leader>fk', '<cmd>FzfLua keymaps<cr>', desc = '[f]ind [k]eymaps' },
       { '<leader>ff', '<cmd>FzfLua files<cr>', desc = '[f]ind [f]iles' },
       { '<leader>fw', '<cmd>FzfLua live_grep<cr>', desc = '[f]ind [w]ords' },
-      { '<leader>fd', '<cmd>FzfLua lsp_diagnostics_document<cr>', desc = '[f]ind [d]iagnostics' },
+      { '<leader>fd', '<cmd>FzfLua lsp_document_diagnostics<cr>', desc = '[f]ind [d]iagnostics' },
       { '<leader>f.', '<cmd>FzfLua lgrep_curbuf<cr>', desc = '[f]ind in current buffer' },
       { '<leader>fs', '<cmd>FzfLua lsp_document_symbols<cr>', desc = '[f]ind document [s]ymbols' },
       { '<leader>fc', '<cmd>FzfLua files cwd=~/.config/nvim<cr>', desc = '[f]ind nvim [c]onfig files' },
