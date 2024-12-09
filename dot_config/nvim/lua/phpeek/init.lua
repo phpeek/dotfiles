@@ -127,6 +127,9 @@ vim.keymap.set('', 'L', '$')
 -- formatting utils
 vim.keymap.set('v', '<leader>jq', ':!jq<CR>', { desc = 'Format JSON using jq' })
 
+-- quick commenting
+vim.keymap.set('n', 'yc', 'yygccp', { desc = 'Duplicate line and comment above', remap = true })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
