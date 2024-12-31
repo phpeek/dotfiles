@@ -1,0 +1,8 @@
+# Search hidden files / directories (e.g. dotfiles) by default
+--hidden
+
+# or
+--glob
+# do not search in .git
+!.git/*
+
