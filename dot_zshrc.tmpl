@@ -151,3 +151,7 @@ export PATH=$PATH:$(go env GOPATH)/bin
 
 # ripgrep
 export RIPGREP_CONFIG_PATH=~/.config/ripgrep/config
+
+# uv
+eval "$(uv generate-shell-completion zsh)"
+eval "$(uvx --generate-shell-completion zsh)"
