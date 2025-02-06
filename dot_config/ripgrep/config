@@ -5,4 +5,5 @@
 --glob
 # do not search in .git
 !.git/*
+!package-lock.json
 
