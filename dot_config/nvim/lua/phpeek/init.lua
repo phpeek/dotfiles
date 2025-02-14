@@ -1121,7 +1121,15 @@ require('lazy').setup({
     cmd = { 'Copilot' },
   },
   {
+    'folke/snacks.nvim',
+    opts = {
+      scroll = {
+        enabled = true,
+        animate = {
+          easing = 'inOutCubic',
         },
+      },
+    },
   },
 
   -- disable automatic check for plugin updates
