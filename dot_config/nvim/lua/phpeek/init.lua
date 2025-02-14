@@ -970,7 +970,9 @@ require('lazy').setup({
       }, neotest_ns)
 
       local adapters = {
-        require 'neotest-python',
+        require 'neotest-python' {
+          args = { '-s' },
+        },
 
         require 'neotest-jest' {
           jestCommand = 'npm test --',
