@@ -1116,16 +1116,12 @@ require('lazy').setup({
     end,
   },
   {
-    'zbirenbaum/copilot.lua',
-    cmd = 'Copilot',
-    event = 'InsertEnter',
-    config = function()
-      require('copilot').setup {
-        suggestion = {
-          auto_trigger = true,
+    'github/copilot.vim',
+    event = { 'InsertEnter' },
+    cmd = { 'Copilot' },
+  },
+  {
         },
-      }
-    end,
   },
 
   -- disable automatic check for plugin updates
