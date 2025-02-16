@@ -1,1 +1,1 @@
-require("phpeek")
+require("config.lazy")
