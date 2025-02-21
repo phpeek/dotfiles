@@ -3,3 +3,4 @@ theme = "catppuccin-macchiato"
 font-family = "iosevka nerd font mono"
 font-size = 24
 
+macos-option-as-alt = true
