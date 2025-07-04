@@ -18,3 +18,20 @@ vim.keymap.set("n", "<left>", '<cmd>echo "Use h to move!!"<CR>')
 vim.keymap.set("n", "<right>", '<cmd>echo "Use l to move!!"<CR>')
 vim.keymap.set("n", "<up>", '<cmd>echo "Use k to move!!"<CR>')
 vim.keymap.set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
+
+-- ObjectID generator
+vim.keymap.set("n", "<leader>oi", function()
+  local handle = io.popen("node ~/.local/scripts/objectid-generator/index.js")
+  if handle == nil then
+    return
+  end
+
+  local result = handle:read("*a")
+  handle:close()
+
+  -- Trim trailing newline
+  result = result:gsub("\n$", "")
+
+  -- Insert at cursor
+  vim.api.nvim_put({ result }, "c", true, true)
+end)
